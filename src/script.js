@@ -40,6 +40,7 @@ directionalLight.shadow.mapSize.height = 1024
 
 directionalLight.shadow.camera.near = 1
 directionalLight.shadow.camera.far = 6
+directionalLight.shadow.radius = 5
 
 directionalLight.shadow.camera.top = 2
 directionalLight.shadow.camera.right = 2
@@ -217,12 +218,12 @@ const tick = () =>
     // Update the sphere
     sphere.position.x = Math.cos(elapsedTime) * 1.5
     sphere.position.z = Math.sin(elapsedTime) * 1.5
-    sphere.position.y = Math.abs(Math.sin(elapsedTime * 3))
+    sphere.position.y = Math.abs(Math.sin(elapsedTime * 4))
 
     // Update the shadow
     sphereShadow.position.x = sphere.position.x
     sphereShadow.position.z = sphere.position.z
-    sphereShadow.material.opacity = (1 - Math.abs(sphere.position.y)) * 0.3
+    sphereShadow.material.opacity = (1 - Math.abs(sphere.position.y)) * 0.4
 
     // Update controls
     controls.update()
