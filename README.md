@@ -1,16 +1,1 @@
-# Three.js Journey
-
-## Setup
-Download [Node.js](https://nodejs.org/en/download/).
-Run this followed commands:
-
-``` bash
-# Install dependencies (only the first time)
-npm install
-
-# Run the local server at localhost:8080
-npm run dev
-
-# Build for production in the dist/ directory
-npm run build
-```
+I'm trying to learn three.js and I needed practice with shadows and lighting effects. Most of the time was tinkering around with what would work, but eventually I created a sphere that bounces around a plane. That sphere doesn't actually cast a shadow as it is whats called a baked shadow. This is to improve performance and to get practice as well with baking both lighting and shadow effects
