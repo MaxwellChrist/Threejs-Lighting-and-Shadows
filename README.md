@@ -1,1 +1,1 @@
-"# ThreejsBasics" 
+This repo is to continue practicing three.js and some more of the more basic concepts about the library
